@@ -26,7 +26,7 @@ def generate_tagset(tags) -> List[str]:
 
 
 if __name__ == '__main__':
-    file = open("./entity.txt", "r")
+    file = open("./data/entity.txt", "r")
     line = file.readlines()
     lists = []
     for i in line:
@@ -34,6 +34,6 @@ if __name__ == '__main__':
         lists.append(i)
     # print(lists)
     abc = generate_tagset(lists)
-    with open('./tags.txt', 'w') as f:
+    with open('./data/tags.txt', 'w') as f:
         for i in abc:
             f.write(i + '\n')

@@ -27,7 +27,7 @@ def evaluate_data(corpus):
 
 # encoding= 'gbk' or 'utf-8'
 def dict2csv(dataDict):
-    with open('data_evaluate.csv', 'w', newline='', encoding='gbk') as csvfile:
+    with open('data_evaluate.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         for row in dataDict:
             writer.writerow(row)

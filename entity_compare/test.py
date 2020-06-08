@@ -2,7 +2,7 @@
 from tokenizer_tools.tagset.offset.corpus import Corpus
 
 
-corpus = Corpus.read_from_file("/entity/test.conllx")
+corpus = Corpus.read_from_file("./entity/test.conllx")
 cs = corpus.generate_statistics()
 et = list(cs.entity_types.keys())
-print("")
+print(et)

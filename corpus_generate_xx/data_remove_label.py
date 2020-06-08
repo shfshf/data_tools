@@ -2,10 +2,10 @@
 
 # 去掉 # 开头的行
 # 空格\t 换成 " "
-with open('./data/test.conllx', 'r') as r:
+with open('./data/train.conllx', 'r') as r:
     corpus = r.readlines()
 
-with open('./data/final.collx', 'wt') as w:
+with open('./data/train_re.conllx', 'wt') as w:
     for document in corpus:
         if document.startswith('#'):
             pass

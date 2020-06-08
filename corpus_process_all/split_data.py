@@ -4,15 +4,15 @@ from tokenizer_tools.conllz.iterator_reader import conllx_iterator_reader
 from tokenizer_tools.split_data import split_data
 from tokenizer_tools.conllz.writer import write_conllx
 
-data = list(conllx_iterator_reader(['/Users/shf/Documents/master/code/data/domain/all_采样/402/286万全量.conllx']))
+data = list(conllx_iterator_reader(['./data/all_data.conllx']))
 train, dev, test = split_data(data)
 
-with open('./train.conllx', 'wt') as fd:
+with open('./data/train.conllx', 'wt') as fd:
     write_conllx(train, fd)
 
-with open('./dev.conllx', 'wt') as fd:
+with open('./data/dev.conllx', 'wt') as fd:
     write_conllx(dev, fd)
 
-with open('./test.conllx', 'wt') as fd:
+with open('./data/test.conllx', 'wt') as fd:
     write_conllx(test, fd)
 

@@ -1,0 +1,26 @@
+generate_sequence_mat 提取句式
+
+generate_sequence_expend 首先提取句式，然后根据实体的list值进行语料扩充
+
+count_all_entity 实体提取包含的所有具体实体样例
+
+data_add_label 没有label的语料首行添加lable
+
+data_remove_label 删除语料首行的label，处理空格符号
+
+data_collect_label 提取语料中的label
+
+data_collect_tag 提取语料中的所有的实体entity
+
+entity_generate_tagset 对entity实体列表生成BILO编码表
+
+entity_sort 对entity实体列表去重
+
+data_len 统计语料条数
+
+data_merge 合并语料
+
+data_split 按比例划分语料
+
+remove_punctuation_end 删除语料末尾的符号
+

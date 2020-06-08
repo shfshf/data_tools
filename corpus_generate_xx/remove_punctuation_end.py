@@ -2,7 +2,7 @@ from tokenizer_tools.tagset.offset.corpus import Corpus
 from seq2annotation.preprocess_hooks.corpus_drop import CorpusAugment
 
 if __name__ == '__main__':
-    corpus = Corpus.read_from_file("./data/test.conllx")
+    corpus = Corpus.read_from_file("./data/dev_test.conllx")
     sample_total = []
     ca = CorpusAugment()
     for sample in corpus:
