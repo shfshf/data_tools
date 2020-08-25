@@ -1,10 +1,10 @@
-#!/usr/bin/env python
-
+from tokenizer_tools.tagset.offset.corpus import Corpus
 import os
 import pathlib
 
 from tokenizer_tools.conllz.iterator_reader import conllx_iterator_reader
 from tokenizer_tools.conllz.writer import write_conllx
+
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 

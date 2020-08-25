@@ -5,11 +5,11 @@
 with open('./data/train.conllx', 'r') as r:
     corpus = r.readlines()
 
-with open('./data/train_re.conllx', 'wt') as w:
+with open('./data/train.txt', 'wt') as w:
     for document in corpus:
         if document.startswith('#'):
             pass
         else:
-            # w.write(document.replace('\t', " "))
-            w.write(document.replace('\t', "\t"))
+            w.write(document.replace('\t', " "))
+            # w.write(document.replace('\t', "\t"))
 

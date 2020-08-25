@@ -24,3 +24,7 @@ data_split 按比例划分语料
 
 remove_punctuation_end 删除语料末尾的符号
 
+generate_domain_data 提取语料中的domain语料
+
+data_extract 抽取语料，代码还未调整与测试
+

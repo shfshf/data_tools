@@ -12,5 +12,5 @@ input_file_list = [str(i) for i in pathlib.Path('./data/domain').iterdir() if i.
 
 data = list(conllx_iterator_reader(input_file_list))
 
-with open('./data/merge/all.conllx', 'wt') as fd:
+with open('./data/all.conllx', 'wt') as fd:
     write_conllx(data, fd)

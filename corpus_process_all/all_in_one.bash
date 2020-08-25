@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-python ./merge_data.py
+#python ./merge_data.py
 python ./split_data.py
 python ./collect_tag.py
 #python ./collect_label.py
