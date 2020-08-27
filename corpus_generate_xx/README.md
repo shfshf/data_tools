@@ -26,5 +26,7 @@ remove_punctuation_end 删除语料末尾的符号
 
 generate_domain_data 提取语料中的domain语料
 
+generate_domain_intent 提取语料中的intent意图（domain）
+
 data_extract 抽取语料，代码还未调整与测试
 

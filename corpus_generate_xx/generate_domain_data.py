@@ -10,4 +10,4 @@ for doc in corpus:
     if doc.domain == "天气":
         ll.append(doc)
 cor_ll = Corpus(ll)
-cor_ll.write_to_file('./data/天气.conllx')
+cor_ll.write_to_file('./data/test.conllx')
