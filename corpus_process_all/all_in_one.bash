@@ -2,6 +2,7 @@
 
 
 #python ./merge_data.py
+python ./A_to_a.py
 python ./split_data.py
 python ./collect_tag.py
 #python ./collect_label.py

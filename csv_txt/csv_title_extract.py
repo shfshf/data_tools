@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 
 
-df = pd.read_csv("ner.csv")
+df = pd.read_csv("./data/new.csv")
 
 b1 = []
 b2 = []
@@ -30,11 +30,11 @@ f1['Expect Slot'] = b3
 f1['Result'] = b4
 f1['Actual Slot'] = b5
 # print(f1)
-# f1.to_csv('fail.csv', sep=',', index=False, encoding="utf-8")
+# f1.to_csv('fail.csv_txt', sep=',', index=False, encoding="utf-8")
 f1.to_excel('fail.xlsx', index=False)
 
 # print(f2)
 f2 = f1[f1['Domain'].isin(["周边"])]
-# f2.to_csv('fail_周边.csv', sep=',', index=False, encoding="utf-8")
+# f2.to_csv('fail_周边.csv_txt', sep=',', index=False, encoding="utf-8")
 f2.to_excel('fail_周边.xlsx', index=False)
 

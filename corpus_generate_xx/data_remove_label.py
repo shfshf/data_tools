@@ -2,7 +2,7 @@
 
 # 去掉 # 开头的行
 # 空格\t 换成 " "
-with open('./data/test.conllx', 'r') as r:
+with open('data/导航.conllx', 'r') as r:
     corpus = r.readlines()
 
 with open('./data/test.txt', 'wt') as w:

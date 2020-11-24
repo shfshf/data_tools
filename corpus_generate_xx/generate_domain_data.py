@@ -3,11 +3,11 @@ from tokenizer_tools.conllz.writer import write_conllx
 
 
 # read data
-corpus = Corpus.read_from_file("./data/all.conllx")
+corpus = Corpus.read_from_file("./data/all_data.conllx")
 
 ll = []
 for doc in corpus:
-    if doc.domain == "天气":
+    if doc.domain == "车身控制":
         ll.append(doc)
 cor_ll = Corpus(ll)
-cor_ll.write_to_file('./data/test.conllx')
+cor_ll.write_to_file('./data/车身控制.conllx')

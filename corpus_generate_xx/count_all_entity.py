@@ -1,7 +1,7 @@
 from tokenizer_tools.tagset.offset.corpus import Corpus
 
 
-corpus = Corpus.read_from_file("./data/all_data.conllx")
+corpus = Corpus.read_from_file("./data/res.conllx")
 b = corpus.generate_statistics()
 
 result = {}
@@ -10,6 +10,7 @@ for k, v in b.entity_types.items():
     d = ["".join(i[0]) for i in v.most_common()]
     result[k] = d
 
+print(result)
 # 分词字典
 with open('./data/entity_all.txt', "w") as f:
     for k in result:

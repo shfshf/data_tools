@@ -30,3 +30,7 @@ generate_domain_intent 提取语料中的intent意图（domain）
 
 data_extract 抽取语料，代码还未调整与测试
 
+extract_entity_corpus 抽取包含某个实体（entity）的corpus
+
+extract_text_corpus 抽取corpus中的text
+
