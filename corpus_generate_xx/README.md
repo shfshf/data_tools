@@ -34,3 +34,5 @@ extract_entity_corpus 抽取包含某个实体（entity）的corpus
 
 extract_text_corpus 抽取corpus中的text
 
+merge_two_conllx_one 合并两条语料生成一条语料
+

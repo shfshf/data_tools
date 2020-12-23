@@ -90,12 +90,27 @@ def remove_select_lines(trash, input, output):
         print('输出成功....')
 
 
+def remove_repeat_lines(input, output):
+    """
+    读取存在重复的文件，删除其中重复的行，并将其保存到新的文件中
+    """
+
+    with open(input, 'r', encoding='utf-8') as fr, open(output, 'w', encoding='utf-8') as fd:
+        new_list = []
+        for text in fr.readlines():
+            if text not in new_list:
+                new_list.append(text)
+                fd.write(text)
+        print('输出成功....')
+
+
 if __name__ == '__main__':
     # trash = '您'
-    input = './data/source_expend/关闭天窗/B.txt'
-    output = './data/source_expend/关闭天窗/B.txt'
+    input = './data/raw/暂停天窗/KB.txt'
+    output = './data/raw/暂停天窗/K.txt'
     # remove_null_lines(input, output)
     # remove_part_end(input, output)
+    # remove_repeat_lines(input, output)
     add_part_end(input, output)
     # remove_all_end(input, output)
     # remove_select_lines(trash, input, output)

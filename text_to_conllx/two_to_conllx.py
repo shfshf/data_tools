@@ -564,8 +564,8 @@ def two_add_before_link_after(map_data, file1, file2, before, link, after, domai
 
 def main():
 
-    text2 = './data/source/H.txt'
-    text1 = './data/source/G.txt'
+    text2 = './data/source_all/H.txt'
+    text1 = './data/source_all/G.txt'
     # text1 = './data/test/H.txt'
     # text2 = './data/test/G.txt'
 
@@ -587,7 +587,7 @@ def main():
 
 # test for one in files
 def one_and_add_noise_file():
-    path = './data/source'
+    path = 'data/source_all'
     noise = './data/add/noise.txt'
     map_data = './data/map/mapping.json'
 
@@ -614,7 +614,7 @@ def one_and_add_noise():
 # test for one intent add before after noise
 def one_add_before_after_noise():
 
-    text1 = './data/source_expend/打开近光灯/I.txt'
+    text1 = './data/raw/打开近光灯/I.txt'
     before = './data/add/before_noise.txt'
     after = './data/add/after_noise.txt'
     map_data = './data/map/mapping.json'
@@ -624,7 +624,7 @@ def one_add_before_after_noise():
 
 # test for one in files
 def one_add_before_after_noise_file():
-    path = './data/raw'
+    path = './data/source'
     before = './data/add/before_noise.txt'
     after = './data/add/after_noise.txt'
     map_data = './data/map/mapping.json'
@@ -638,8 +638,8 @@ def one_add_before_after_noise_file():
 # test for two intent add link before after noise
 def two_add_before_link_after_noise():
 
-    text1 = './data/source_expend/打开近光灯/I.txt'
-    text2 = './data/source_expend/关闭后备箱/A.txt'
+    text1 = './data/source/B.txt'
+    text2 = './data/source/H.txt'
     before = './data/add/before_noise.txt'
     after = './data/add/after_noise.txt'
     link = './data/add/link.txt'
